@@ -1,0 +1,8 @@
+~*
+*.class
+*.zip
+.idea
+*.test
+*.kotlin_module
+build
+.gradle

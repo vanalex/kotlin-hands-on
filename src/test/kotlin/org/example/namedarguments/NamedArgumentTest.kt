@@ -27,7 +27,7 @@ class NamedArgumentTest {
 
     @Test
     fun colorTest(){
-        assertEquals( Color(red = 77).toString(), "(77, 0, 0)")
+        assertEquals( Color(red = 77).toString(), "red 77, green 0 blue 0")
     }
 
     @Test

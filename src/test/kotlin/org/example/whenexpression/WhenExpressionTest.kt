@@ -33,4 +33,15 @@ class WhenExpressionTest {
 
         assertEquals(result.toString(), "Hooray! Too bad!Hooray!")
     }
+
+    @Test
+    fun testMixColors(){
+        val colormixed = mixColors("red", "yellow")
+        assertEquals(colormixed, "orange")
+    }
+
+    @Test
+    fun testBmi() {
+        assertEquals(bmiMetricWithWhen(72.57, 1.727), "Normal weight")
+    }
 }

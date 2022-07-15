@@ -14,15 +14,15 @@ class NonNullTest {
     @Test
     fun testValueFromMap() {
         val map = mapOf(1 to "one")
-        assertEquals(map[1]!!.toUpperCase(), "ONE")
-        assertEquals(map.getValue(1).toUpperCase(), "ONE")
+        assertEquals(map[1]!!.uppercase(), "ONE")
+        assertEquals(map.getValue(1).uppercase(), "ONE")
         try {
-            map[2]!!.toUpperCase()
+            map[2]!!.uppercase()
         }catch (e: Exception){
             assertEquals(e.message, null)
         }
         try {
-            map.getValue(2).toUpperCase()
+            map.getValue(2).uppercase()
         }catch (e: Exception){
             assertEquals(e.message,"Key 2 is missing in the map.")
         }

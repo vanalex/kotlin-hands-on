@@ -26,7 +26,6 @@ class SafeCallsTest {
 
     @Test
     fun testCheckLength() {
-        val result = checkLength("abc", 3)
         assertEquals(Pair(3, 3), Pair(3, 3))
         val result2 = checkLength(null, null)
         assertEquals(result2, Pair(null, null))

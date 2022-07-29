@@ -20,6 +20,6 @@ class ConstructorTest {
         assertEquals(GardenItem("Elf").material, Material.Plastic)
         assertEquals(GardenItem("Snowman").name, "Snowman")
         assertEquals(GardenItem("Gazing Ball", Material.Metal).toString(), "Metal Gazing Ball")
-        assertEquals(GardenItem(material = Material.Ceramic).toString(), "Ceramic Strange Thing")
+        assertEquals(GardenItem(material = Material.Ceramic).toString(), "Ceramic Strange thing")
     }
 }
